@@ -80,20 +80,21 @@
         android:layout_height="wrap_content"
         android:text="@string/next_exercise"
         android:textSize="22sp"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/flRestView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvExerciseNAme"
+        android:id="@+id/tvNextExerciseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next_exercise"
+        tools:text="@string/next_exercise"
         android:textSize="22sp"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold"
+        android:text="Jumping Jack"
         app:layout_constraintTop_toBottomOf="@id/tvNextExercise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -166,5 +167,15 @@
         </LinearLayout>
 
     </FrameLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExerciseStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flExerciseView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
